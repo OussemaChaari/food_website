@@ -1,0 +1,34 @@
+.swiper-button-next-custom,
+.swiper-button-prev-custom {
+    font-size: 24px;
+    background-color:#fed330;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 10;
+    transition: background-color 0.3s ease;
+}
+.swiper-button-next-custom {
+    right: 5px;
+}
+.swiper-button-prev-custom {
+    left: 5px;
+}
+.swiper-button-next-custom::before{
+  content: '\2192';
+  color: white;
+  margin-bottom: 5px;
+}
+.swiper-button-prev-custom::before {
+    content: "\2190";
+    color: white;
+    margin-bottom: 5px;
+}
+
